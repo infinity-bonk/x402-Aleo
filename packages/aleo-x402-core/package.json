@@ -1,0 +1,13 @@
+{
+  "name": "aleo-x402-core",
+  "version": "0.1.0",
+  "description": "Shared pieces of private x402 payments on Aleo: identifiers, API helpers, USDCx freeze-list proofs, signed-request format",
+  "license": "Apache-2.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@provablehq/sdk": "^0.12.1"
+  }
+}

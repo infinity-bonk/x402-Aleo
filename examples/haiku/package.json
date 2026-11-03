@@ -1,0 +1,30 @@
+{
+  "name": "haiku-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "keygen": "tsx src/keygen.ts",
+    "server": "tsx --env-file=.env src/server.ts",
+    "server:dry-run": "ALEO_SETTLE=dry-run tsx --env-file=.env src/server.ts",
+    "client": "tsx --env-file=.env src/client.ts",
+    "balances": "tsx --env-file=.env src/balances.ts",
+    "aleo:keygen": "tsx src/aleo-keygen.ts",
+    "aleo:records": "tsx --env-file=.env src/aleo-records.ts",
+    "aleo:transfer": "tsx --env-file=.env src/aleo-transfer.ts",
+    "aleo:bench": "tsx --env-file=.env src/aleo-bench.ts",
+    "aleo:client": "tsx --env-file=.env src/aleo-client.ts",
+    "aleo:balances": "tsx --env-file=.env src/aleo-balances.ts"
+  },
+  "dependencies": {
+    "aleo-x402-buyer": "0.1.0",
+    "aleo-x402-core": "0.1.0",
+    "aleo-x402-seller": "0.1.0",
+    "@provablehq/sdk": "^0.12.1",
+    "@x402/core": "^2.28.0",
+    "@x402/evm": "^2.28.0",
+    "@x402/express": "^2.28.0",
+    "@x402/fetch": "^2.28.0",
+    "express": "^5.3.0",
+    "viem": "^2.57.10"
+  }
+}

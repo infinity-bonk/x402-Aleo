@@ -1,0 +1,30 @@
+{
+  "name": "x402-aleo",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "typecheck": "tsc",
+    "keygen": "npm run keygen -w examples/haiku --",
+    "server": "npm run server -w examples/haiku --",
+    "server:dry-run": "npm run server:dry-run -w examples/haiku --",
+    "client": "npm run client -w examples/haiku --",
+    "balances": "npm run balances -w examples/haiku --",
+    "aleo:keygen": "npm run aleo:keygen -w examples/haiku --",
+    "aleo:records": "npm run aleo:records -w examples/haiku --",
+    "aleo:transfer": "npm run aleo:transfer -w examples/haiku --",
+    "aleo:bench": "npm run aleo:bench -w examples/haiku --",
+    "aleo:client": "npm run aleo:client -w examples/haiku --",
+    "aleo:balances": "npm run aleo:balances -w examples/haiku --"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

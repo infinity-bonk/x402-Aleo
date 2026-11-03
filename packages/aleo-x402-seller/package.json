@@ -1,0 +1,15 @@
+{
+  "name": "aleo-x402-seller",
+  "version": "0.1.0",
+  "description": "Accept private USDCx x402 payments on Aleo: server scheme, fee-sponsoring facilitator, prepaid credits, signed-request verification",
+  "license": "Apache-2.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "aleo-x402-core": "0.1.0",
+    "@provablehq/sdk": "^0.12.1",
+    "@x402/core": "^2.28.0"
+  }
+}
